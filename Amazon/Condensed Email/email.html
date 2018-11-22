@@ -1,0 +1,143 @@
+<html>
+<body>
+	<div>
+		<div>
+			<br>
+			<div style="margin:0;color:rgb(51,51,51)">
+				<img height="1" src="{{url.webserver}}" width="1">
+				<table align="center" cellpadding="0" cell-spacing="0" style="width:540px;margin:0 auto">
+					<tbody>
+						<tr>
+							<td>
+								<table cellpadding="0" cellspacing="0" style="width:500px;margin:0 20px">
+									<tbody>
+										<tr>
+											<td style="border-bottom:1px solid rgb(234,234,234);padding-top:10px;padding-left:0px;padding-right:0px;padding-bottom:10px">
+												<table cellpadding="0" cellspacing="0">
+													<tbody>
+														<tr>
+															<td width="250">
+																<a href="{{url.webserver}}" style="text-decoration:none;color:rgb(0,102,153)" title="Visit Amazon.com">{{ inline_image('/king-phisher-private-templates/emails/Amazon/Condensed Email/Attachments/logo.png') }}</a>
+															</td>
+															<td align="right" valign="top" width="250">
+																<p style="font-size:20px;font-family:&quot;arial&quot;,&quot;sans-serif&quot;;margin:0px">Shipping Confirmation</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding-left:0px;padding-right:0px;padding-top:9px;padding-bottom:18px">
+												<p style="font-size:14px;font-family:&quot;arial&quot;,&quot;sans-serif&quot;;margin:0px"><span style="font-size:18px;line-height:30px;color:rgb(204,102,0)">Hello {{client.first_name}},</span><br>
+												<br>
+												<a href="{{url.webserver}}" style="text-decoration:none;color:rgb(0,102,153)">"PRODUCT SHIPPING HERE"</a> has shipped.</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p style="padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;font:18px Arial,sans-serif;color:rgb(204,102,0);border-bottom:1px solid rgb(234,234,234);margin:0px">Details</p>
+											</td>
+										</tr>
+										<tr>
+											<td style="border-top:3px solid rgb(203,207,212);background-color:rgb(246,247,248)">
+												<table cellpadding="0" cellspacing="0">
+													<tbody>
+														<tr>
+															<td style="padding-left:18px;padding-right:9px;padding-top:11px;padding-bottom:14px" valign="top" width="223">
+																<p style="font-size:14px;font-family:&quot;arial&quot;,&quot;sans-serif&quot;;font-weight:bold;margin:0px"><span style="color:rgb(102,102,102);font-weight:normal">Arriving:</span><br>
+																<span style="color:rgb(0,153,0)">{{time.local|tomorrow|strftime('%A, %B %e, %Y')}}</span></p><br>
+																<p style="font-size:14px;font-family:&quot;arial&quot;,&quot;sans-serif&quot;;font-weight:bold;margin:0px"><a href="{{url.webserver}}" style="font-weight:normal;text-decoration:none;color:rgb(0,102,153)">{{ inline_image('/king-phisher-private-templates/emails/Amazon/Condensed Email/Attachments/tracker.png') }}</a></p><br>
+																<p style="font-size:14px;font-family:&quot;arial&quot;,&quot;sans-serif&quot;;font-weight:bold;margin:0px"><a href="{{url.webserver}}" style="font-weight:normal;text-decoration:none;color:rgb(0,102,153)">{{ inline_image('/king-phisher-private-templates/emails/Amazon/Condensed Email/Attachments/details.png') }}</a></p>
+															</td>
+															<td style="padding-left:9px;padding-right:18px;padding-top:11px;padding-bottom:14px" valign="top" width="223">
+																<p style="font-size:14px;font-family:&quot;arial&quot;,&quot;sans-serif&quot;;font-weight:bold;margin:0px"><span style="color:rgb(102,102,102);font-weight:normal">Shipped to:</span><br>
+																<br></p><br>
+																<table cellpadding="0" cellspacing="0" style="width:100%">
+																	<tbody>
+																		<tr>
+																			<td style="vertical-align:top;width:100%;text-align:left;font-family:&quot;arial&quot;">
+																				<table>
+																					<tbody>
+																						<tr>
+																							<td style="font-size:12px;vertical-align:top;width:100%;text-align:left;font-family:&quot;arial&quot;">Total Before Tax:</td>
+																						</tr>
+																						<tr>
+																							<td style="font-size:12px;vertical-align:top;width:100%;text-align:left;font-family:&quot;arial&quot;">Tax Collected:</td>
+																						</tr>
+																						<tr>
+																							<td style="font-size:14px;font-weight:bold;vertical-align:top;width:100%;text-align:left;font-family:&quot;arial&quot;">Shipment Total:</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</td>
+																			<td style="vertical-align:top;width:100%;text-align:left;font-family:&quot;arial&quot;">
+																				<table>
+																					<tbody>
+																						<tr>
+																							<td style="font-size:12px;text-align:right;vertical-align:top;width:100%;font-family:&quot;arial&quot;">$VALUE OF ITEM</td>
+																						</tr>
+																						<tr>
+																							<td style="font-size:12px;text-align:right;vertical-align:top;width:100%;font-family:&quot;arial&quot;">$2.36</td>
+																						</tr>
+																						<tr>
+																							<td style="font-size:14px;font-weight:bold;vertical-align:top;width:100%;text-align:left;font-family:&quot;arial&quot;">$SUM OF ITEM</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<table cellpadding="0" cellspacing="0">
+																	<tbody>
+																		<tr>
+																			<td></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding-left:0px;padding-top:9px;padding-bottom:9px">
+												<p style="font-size:11px;font-family:&quot;arial&quot;,&quot;sans-serif&quot;;margin:0px"></p>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding-left:0;padding-top:9px;padding-bottom:9px;border-bottom:1px solid rgb(234,234,234)">
+												<p style="font-size:14px;font-family:&quot;arial&quot;,&quot;sans-serif&quot;;margin:0px">Return or replace your items in <a href="{{url.webserver}}" style="text-decoration:none;color:rgb(0,102,153)" >Your Orders.</a></p><br>
+												<p style="font-size:14px;font-family:&quot;arial&quot;,&quot;sans-serif&quot;;margin:0px">We hope to see you again soon.<br>
+												<br>
+												<span style="font-size:14px;font-weight:bold">Amazon.com</span></p>
+											</td>
+										</tr>
+										<tr>
+											<td style="border-bottom:1px solid rgb(234,234,234)">
+												<table align="left" border="0" cellpadding="0" cellspacing="0" style="vertical-align:central;background:white" width="500"></table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tr>
+						<td style="padding-top:9px">
+							<p style="color:rgb(102,102,102);font-size:10px;line-height:16px;padding-bottom:10px;font-family:&quot;arial&quot;,&quot;sans-serif&quot;;margin:0px">Unless otherwise noted, items sold by Amazon.com LLC are subject to sales tax in select states in accordance with the applicable laws of that state. If your order contains one or more items from a seller other than Amazon.com LLC, it may be subject to state and local sales tax, depending upon the sellers business policies and the location of their operations. Learn more about <a href="{{url.webserver}}" style="text-decoration:none;color:rgb(0,102,153)">tax and seller information</a>.</p>
+							<p style="color:rgb(102,102,102);font-size:10px;line-height:16px;padding-bottom:10px;font-family:&quot;arial&quot;,&quot;sans-serif&quot;;margin:0px">Your invoice can be accessed <a href="{{url.webserver}}" style="text-decoration:none;color:rgb(0,102,153)">here</a>.</p>
+							<p style="color:rgb(102,102,102);font-size:10px;line-height:16px;padding-bottom:10px;font-family:&quot;arial&quot;,&quot;sans-serif&quot;;margin:0px">This email was sent from a notification-only address that cannot accept incoming email. Please do not reply to this message.</p>
+						</td>
+					</tr>
+				</table>
+						{{tracking_dot_image_tag}}
+			</div>
+		</div>
+	</div>
+</body>
+</html>
